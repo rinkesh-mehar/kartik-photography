@@ -1,0 +1,579 @@
+/* start of global styles */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: inherit;
+  overflow-x: hidden;
+}
+
+nav form {
+  display: initial !important;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-style: normal !important;
+  overflow-x: hidden;
+}
+
+.wow {
+  animation-duration: 3s;
+}
+
+section#hero .container-fluid,
+section#about__me,
+section#portfolio,
+section#services,
+section#blog,
+section#contact {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section#about__me h1,
+section#portfolio h1,
+section#services h1,
+section#blog h1,
+section#contact h1 {
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 120%;
+}
+
+section#header h1,
+section#about__me h2,
+section#services p,
+section#blog h4,
+section#footer h4 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 120%;
+}
+
+section#about__me p,
+section#contact p,
+section#footer p {
+  line-height: 120%;
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+/* end of global styles */
+
+/* start of header styles */
+section#header a.navbar-brand {
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  line-height: 120% !important;
+}
+
+section#header .nav-item a {
+  line-height: 120%;
+  font-size: 1.7rem;
+  font-weight: normal;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* end of header styles */
+
+/* start of hero styles */
+section#hero {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+section#hero p {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 140%;
+  height: 100%;
+}
+
+section#hero .full-bg-image {
+  height: 100vh;
+  width: 100vw;
+  background: url("../../assets/img/hero.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* end of hero styles */
+
+/* start of about me section styles */
+section#about__me img.d-block {
+  color: rgba(196, 196, 196, 0.2);
+  box-shadow: -3.188rem 2.75rem;
+}
+
+/* end of about me section styles */
+
+/* start of portfolio section styles */
+section#portfolio {
+  padding-bottom: 4rem;
+}
+
+section#portfolio #portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 19.938rem;
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+
+section#portfolio .gallery__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section#portfolio .gallery__item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+section#portfolio .gallery__item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+section#portfolio .gallery__item:hover .image img {
+  transform: scale(1.1);
+}
+
+.height__1 {
+  grid-row: span 1;
+}
+
+.height__2 {
+  grid-row: span 2;
+}
+
+.height__3 {
+  grid-row: span 3;
+}
+
+section#portfolio .carousel-indicators .active {
+  background: #ffffff;
+  color: #18191D !important;
+}
+
+section#portfolio .carousel-indicators>li {
+  background: #18191D;
+  color: white !important;
+  text-align: center;
+  font-size: 1rem;
+  text-indent: 0;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  border-radius: 17%;
+  z-index: 99;
+  border: 2px solid white;
+  overflow: hidden !important;
+}
+
+/* end of portfolio section styles */
+
+/* start of services section styles */
+section#services .services__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section#services .services__item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+section#services .services__item .image::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+section#services .services__item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+section#services .services__item:hover .image img {
+  transform: scale(1.2);
+}
+
+section#services .services__item .text {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  transition: .3s ease-in-out;
+  backdrop-filter: blur(.5px) saturate(1.0);
+  color: white;
+  padding: 0rem;
+  -webkit-backdrop-filter: blur(.5px) saturate(1.0);
+  text-align: center;
+  align-items: center;
+}
+
+/* end of services section styles */
+
+/* start of blog section styles */
+section#blog .card {
+  background-color: transparent;
+}
+
+section#blog p {
+  line-height: 120%;
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+
+/* end of blog section styles */
+
+
+@media only screen and (min-width:1900px) {
+
+  section#header .nav-item a {
+    line-height: 120%;
+    font-size: 3rem;
+    font-weight: normal;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    letter-spacing: 1px;
+  }
+
+  section#hero p {
+    font-size: 3.125rem;
+    width: 56.875rem;
+  }
+
+  section#header h1 {
+    font-size: 3.5rem;
+  }
+
+}
+
+@media only screen and (min-width:1000px) {
+  section#hero p {
+    width: 56.875rem;
+  }
+}
+
+
+
+/* START OF MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+
+  section#hero p {
+    font-size: 1.563rem;
+  }
+
+  section#about__me h1,
+  section#portfolio h1,
+  section#services h1,
+  section#blog h1,
+  section#contact h1 {
+    font-size: 2.5rem;
+  }
+
+  section#about__me h2,
+  section#services p,
+  section#blog h4,
+  section#footer h4 {
+    font-size: 1rem;
+  }
+
+  section#about__me p,
+  section#contact p,
+  section#footer p {
+    font-size: 1.2rem;
+  }
+
+  section#about__me img.d-block {
+    width: 20rem;
+    height: auto;
+  }
+
+  section#about__me img.d-block {
+    box-shadow: -2.5rem 2rem;
+  }
+
+  section#portfolio #portfolio__container {
+    grid-auto-rows: 13.938rem;
+  }
+
+  section#blog p {
+    font-size: 1rem;
+  }
+
+  section#footer img.p-4 {
+    padding: 1rem !important;
+
+  }
+}
+
+@media screen and (max-width:992px) {
+
+  section#about__me h1,
+  section#portfolio h1,
+  section#services h1,
+  section#blog h1,
+  section#contact h1 {
+    font-size: 2rem;
+  }
+
+  section#about__me h2,
+  section#services p,
+  section#blog h4,
+  section#footer h4 {
+    font-size: .9rem;
+  }
+
+  section#about__me p,
+  section#contact p,
+  section#footer p {
+    font-size: .8rem;
+  }
+
+  section#about__me img.d-block {
+    width: 12rem;
+    height: auto;
+  }
+
+  section#about__me img.d-block {
+    box-shadow: -1.5rem 1rem;
+  }
+
+  section#portfolio #portfolio__container {
+    grid-auto-rows: 10rem;
+  }
+
+  section#blog p {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  nav h1 {
+    display: none;
+  }
+
+  .arrow {
+    width: 1.5rem;
+    height: auto;
+  }
+
+  section#header .navbar-brand {
+    display: initial !important;
+  }
+
+  section#header span.navbar-toggler-icon {
+    padding-right: 20% !important;
+  }
+
+  section#header .nav-item a.py-3 {
+    font-size: 1rem;
+    padding-bottom: 1.375rem !important;
+    padding-top: 1.375rem !important;
+    padding-left: 1.875rem !important;
+  }
+
+  section#hero .row.pl-5 {
+    padding-left: 0 !important;
+  }
+
+  section#about__me h1,
+  section#portfolio h1,
+  section#services h1,
+  section#blog h1,
+  section#contact h1 {
+    font-size: 1.875rem;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  section#about__me h2,
+  section#services p,
+  section#blog h4,
+  section#footer h4 {
+    font-size: 1.563rem;
+  }
+
+  section#about__me p,
+  section#footer p {
+    font-size: 1rem;
+  }
+
+  section#about__me .mx-5 {
+    margin: 0 !important;
+  }
+
+  section#about__me .row .paragraph {
+    margin-bottom: 10%;
+  }
+
+  section#about__me img.d-block {
+    width: 100%;
+    height: auto;
+    /* padding-bottom: 2rem; */
+  }
+
+  section#about__me img.d-block {
+    box-shadow: -1.9rem 1.74rem;
+  }
+
+  section#about__me .row .pr-5 {
+    padding-right: 0 !important;
+  }
+
+  section#portfolio .container-fluid.p-5,
+  section#services .container-fluid.p-5,
+  section#contact .container-fluid.p-5 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  section#portfolio #portfolio__container {
+    grid-auto-rows: 6rem;
+  }
+
+  section#blog .px-md-5 {
+    padding-left: 0 !important;
+  }
+
+  section#blog .card {
+    margin-bottom: 2rem;
+  }
+
+  section#blog .card img.card-img-top {
+    margin-bottom: .5rem;
+  }
+
+  section#blog .card img.comments {
+    width: .8rem;
+  }
+
+  section#contact p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width:492px) {
+  section#hero p {
+    font-size: 1.2rem;
+  }
+
+  section#about__me h1,
+  section#portfolio h1,
+  section#services h1,
+  section#blog h1,
+  section#contact h1 {
+    font-size: 1.1rem;
+  }
+
+  section#about__me h2,
+  section#services p,
+  section#blog h4,
+  section#footer h4 {
+    font-size: 1rem;
+  }
+
+  section#portfolio #portfolio__container {
+    grid-auto-rows: 4rem;
+  }
+
+  section#contact p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:310px) {
+  section#hero p {
+    font-size: 1.1rem;
+  }
+
+  section#about__me .p-5,
+  section#blog .p-5 {
+    padding: 2rem !important;
+  }
+
+  section#about__me h1,
+  section#portfolio h1,
+  section#services h1,
+  section#blog h1,
+  section#contact h1 {
+    font-size: .8rem;
+  }
+
+  section#about__me h2,
+  section#services p,
+  section#blog h4,
+  section#footer h4 {
+    font-size: .7rem;
+  }
+
+  section#portfolio.px-5,
+  section#services.px-5,
+  section#contact.px-5 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  section#contact p,
+  section#footer p,
+  section#about__me p {
+    font-size: .6rem;
+  }
+
+  section#about__me img.d-block {
+    box-shadow: -1rem 1rem;
+  }
+
+  section#portfolio #portfolio__container {
+    grid-auto-rows: 2rem;
+  }
+
+  section#blog p {
+    font-size: .45rem;
+  }
+
+  section#blog .card img.comments {
+    width: .6rem;
+  }
+}
+
+/* END OF MEDIA QUERIES */
