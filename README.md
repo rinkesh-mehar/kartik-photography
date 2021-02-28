@@ -32,22 +32,11 @@ The application was deployed to netlify.
 
 ##  Authors
 
-* **Wendy Munyasi**  (https://github.com/wendymunyasi) - Slack Username: **@__wendy**
+* **Rinkesh Mehar**  (https://github.com/rinkesh-mehar)
 
 ##  License
 
 This project is licensed under the MIT License.
-
-
-## Project-Setup Instructions.
-
-1. git clone using the following links.
-
-   link: https://github.com/wendymunyasi/photography-portfolio.git
-
-2. Naviagte to the `photography-portfolio` directory.
-3. Run `ng serve -o` on your terminal and a browser will open on `http://localhost:4200/ `automatically showing the landing page. 
-
 
 ## Code scaffolding
 
@@ -76,10 +65,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 | --------- | ------ |
 |On loading the app you see the landing page showing various details about the photographer.|Not Applicable.|
 |Clicking any link of the navigation bar.|You are redirected to the specific section of the page that you clicked.|
-
-
-## Sample Screenshot of of the landing page
-
-<div style="text-align:center">
-    <img src="./src/assets/img/photography-portfolio.png">
-</div>
